@@ -8,3 +8,9 @@ fetchPost
 fetchPost/.*
 fetch
 fetch/.*
+wbgameIntro/node_modules/.*
+wbgameIntro/server.js
+wbgameIntro/startServer.bat
+wbgame/node_modules/.*
+wbgame/server.js
+wbgame/startServer.bat
