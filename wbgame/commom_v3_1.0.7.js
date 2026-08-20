@@ -441,8 +441,6 @@ if (location.protocol === "http:") {
         if (_0x52c8bd[0x1].indexOf("/assetUpdate") >= 0x0) {
             return;
         }
-        // if (_0x52c8bd[0x1].indexOf("/fullhouse3") >= 0x0) {
-        // }
         _0x52c8bd[0x1] = _0x52c8bd[0x1].replace("https://", `${window.location.protocol}//`);
 
         this.send = function (..._0x37d1e8) {
@@ -471,46 +469,26 @@ if (location.protocol === "http:") {
         return _0x4ee24e.apply(this, _0x52c8bd);
     };
 
-    // let copyData = async (data) => {
-    //     const cloneRes = data.clone();
-
-    //     try {
-    //         const buffer = await cloneRes.arrayBuffer();
-    //         const bytes = new Uint8Array(buffer);
-    //         let binary = "";
-    //         bytes.forEach((b) => (binary += String.fromCharCode(b)));
-
-    //         console.log(`%c[Fetch 拦截] URL: ${data.url}`, "color: #00ff00; font-weight: bold;");
-    //         console.log("长度(Bytes):", bytes.length);
-    //         console.log("Base64数据:", btoa(binary));
-    //     } catch (e) {
-    //         console.error("拦截打印失败:", e);
-    //     }
-    // };
-
     const _0x20cfe5 = window.fetch;
     window.fetch = async (_0x5e0511, _0x130dfd) => {
         const _0x53734b = typeof _0x5e0511 === "string" ? _0x5e0511 : _0x5e0511.url;
         let _0x125b1f = _0x49c406(_0x53734b);
         let _0x2efb4d = _0x130dfd || {};
 
-        if (_0x125b1f && _0x125b1f.indexOf(".astc") > -1) {
-            console.log("==========astcastcastc=============================astcastcastc=====================");
-            _0x125b1f = _0x125b1f.replace(/\.astc(\?|$)/, ".webp$1");
-            return _0x20cfe5(_0x125b1f, _0x2efb4d)
-                .then((_0x28cf90) => {
-                    return _0x28cf90;
-                })
-                ["catch"]((_0xcf04c2) => {
-                    return _0xcf04c2;
-                });
-        }
+        // if (_0x125b1f && _0x125b1f.indexOf(".astc") > -1) {
+        //     console.log("==========astcastcastc=============================astcastcastc=====================");
+        //     _0x125b1f = _0x125b1f.replace(/\.astc(\?|$)/, ".webp$1");
+        //     return _0x20cfe5(_0x125b1f, _0x2efb4d)
+        //         .then((_0x28cf90) => {
+        //             return _0x28cf90;
+        //         })
+        //         ["catch"]((_0xcf04c2) => {
+        //             return _0xcf04c2;
+        //         });
+        // }
 
         const _0xb61895 = _0x5e0511.body && typeof _0x5e0511.body.getReader === "function" ? await new Response(_0x5e0511.body).blob() : _0x5e0511.body;
         if (_0x5e0511 instanceof Request) {
-            // let aa = _0x20cfe5.toString()
-            // let bb = window.__wbg_fetch_b7bf320f681242d2.toString()
-
             _0x125b1f = _0x125b1f.replace("https://", `${window.location.protocol}//`);
             const _0x36b051 = new Headers(_0x5e0511.headers || {});
             _0x36b051.set("x-front-page", window.location.href);
@@ -525,9 +503,6 @@ if (location.protocol === "http:") {
                 referrer: _0x5e0511.referrer,
                 duplex: "half",
             };
-
-            // console.log("==fecth--Request=url="+_0x125b1f)
-            // console.trace("==fecth--Request==")
         }
         const _0x6bdb28 = _0x2efb4d.headers?.["get"]("Content-Type");
         const _0xb33212 = _0x6bdb28?.["includes"]("application/x-www-form-urlencoded");
@@ -544,8 +519,6 @@ if (location.protocol === "http:") {
             .then((_0x28cf90) => {
                 if (_0x2c14a0 instanceof Request) {
                     console.log("==fecth--Request=url=" + _0x125b1f);
-                    // console.trace("==fecth--Request==")
-                    // copyData(_0x28cf90);
                 }
 
                 return _0x28cf90;
