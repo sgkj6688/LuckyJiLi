@@ -553,17 +553,6 @@ if (location.protocol === "http:") {
                     } else {
                         _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//" + window.location.hostname + `:8002`);
                     }
-                } else if (
-                    window.location.href.indexOf("pre") >= 0x0 ||
-                    window.location.href.indexOf("pre-luckyjili") >= 0x0 ||
-                    window.location.href.indexOf("gametest123") >= 0x0 ||
-                    window.location.href.indexOf("pre-luckyjili-cocos.gametest123.com") >= 0x0
-                ) {
-                    if (_0x1536f8 && _0x3c78dc) {
-                        _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
-                    } else {
-                        _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
-                    }
                 } else {
                     if (_0x1536f8 && _0x3c78dc) {
                         _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//" + window.location.hostname + `:8022`);
