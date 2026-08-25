@@ -1,0 +1,15 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "针对 localhost 启动 Chrome",
+            "url": "http://192.168.8.126:8002/en-US/intro?token=1SMJ9mlOFBItt2092090306133082112&game=51&posthost=13.215.75.171:8013&&sac=0&betmin=1&betmax=100&oddsmax=10000&winmax=1000000&buybonus=true&userbet=1&xfrontpage=http%3A%2F%2F13.215.75.171%3A8013%2Fmc%2F%3FssoKey%3D2092090253133856768%26lang%3Den-US%26be%3D0008%3A311.31.1.3%26iu%3Dtrue%26gameId%3D199%26loginFrom%3Dwb-gaming%26gs%3D0008%3A31.01.02.271%26domain_platform%3D0008%3A31.01.02.271%26domain_gs%3Dsemagilij%26apiId%3D6%26cav%3D%26reqt%3Dl_fcb7a08a584333965369be93f5fb2bd1_903299182LT0_endl_1780976343%26esign%3Dk_ssoKey_c74c0968a658%26isWebp%3D1",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

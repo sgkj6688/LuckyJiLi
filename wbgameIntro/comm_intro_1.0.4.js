@@ -36,9 +36,20 @@
         return _0x5122c4(_0x213c65);
     };
 })();
+
 const hasOpen = window.location.href.includes("intro-");
-const hostName = "3.1.13.113";
-const hostPort = ":8000";
+function GetLinkParameterByName(name, url) {
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return "";
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+const chref = new URL(window.location.href);
+const xfrontpage = chref.searchParams.get("xfrontpage");
+const hostName = GetLinkParameterByName("be", xfrontpage).split("").reverse().join("");
+
 (() => {
     document.addEventListener("DOMContentLoaded", () => {
         if (!document.body) {
@@ -82,10 +93,10 @@ setInterval(() => {
 replaceHost = (_0x48d614, _0x7c9b6b) => {
     if (_0x7c9b6b == true) {
         if (hasOpen) {
-            _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName + hostPort);
+            _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName);
             // console.log(_0x48d614);
         } else {
-            _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName + hostPort);
+            _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName);
         }
         // console.log(`replaceHost-0000-_0x48d614-${_0x48d614}`);
 
@@ -93,7 +104,7 @@ replaceHost = (_0x48d614, _0x7c9b6b) => {
 
         // console.log(`replaceHost-1111-_0x48d614-${_0x48d614}`);
     } else {
-        _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName + hostPort);
+        _0x48d614 = _0x48d614.replaceAll(/\/\/[^/]*/g, "//" + hostName);
 
         // console.log(`replaceHost-2222-_0x48d614-${_0x48d614}`);
     }
