@@ -15,3 +15,5 @@ wbgame/node_modules/.*
 wbgame/server.js
 wbgame/startServer.bat
 .DS_Store
+wbgame/startServer.sh
+

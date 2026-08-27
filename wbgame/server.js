@@ -10,7 +10,7 @@ app.use(express.static(".")); // 设置静态文件目录为当前目录
 // 自定义 MIME 类型（如果需要）
 app.use((req, res, next) => {
     // console.log(req.url);
-    res.setHeader("Content-Type", "text/css");
+    res.setHeader("Content-Type", "text/css");5
     res.setHeader("Content-Type", "application/javascript");
     res.setHeader("Content-Type", "text/javascript");
     res.setHeader("Content-Type", "application/cconb+json");
