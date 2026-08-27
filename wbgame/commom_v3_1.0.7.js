@@ -1,3 +1,19 @@
+if (location.href.includes("gametest123")) {
+    //预生产测试
+    //// 1. 动态创建 script 标签
+    const script = document.createElement("script");
+    // 2. 设置 vConsole 的 CDN 地址
+    script.src = "https://unpkg.com/vconsole@latest/dist/vconsole.min.js";
+    // 3. 监听脚本加载完成事件，完成后再进行初始化
+    script.onload = function () {
+        // 脚本加载完后，window 上才会有 VConsole 对象
+        window.vConsole = new window.VConsole();
+        console.log("vConsole 初始化成功！");
+    };
+    // 4. 将 script 标签插入到页面中，触发下载
+    document.head.appendChild(script);
+}
+
 if (location.protocol === "http:") {
     function GetLinkParameterByName(name) {
         var url = window.location.href;
