@@ -4211,7 +4211,8 @@ var _0x39a7e1 = _0x1fa7;
             return this[_0x586d6f(0x188d)](_0x2d9d18, _0x1a03a1)['ldelim']();
           }, _0x329fdd[_0x1acfb0(0x1c74)] = function (_0x30e765, _0x100d37, _0xcee491) {
             //decode
-            console.log("====decode============")
+            // console.log("====decode============")
+
             var _0xb95093 = _0x1acfb0;
             _0x30e765 instanceof _0x3a608c || (_0x30e765 = _0x3a608c[_0xb95093(0x2bdc)](_0x30e765));
             for (var _0x366205 = void 0x0 === _0x100d37 ? _0x30e765[_0xb95093(0x2d4d)] : _0x30e765[_0xb95093(0x9ea)] + _0x100d37, _0x361f39 = new _0x2dc704['serverProto']['GameInfoAck'](); _0x30e765[_0xb95093(0x9ea)] < _0x366205;) {
@@ -4274,6 +4275,7 @@ var _0x39a7e1 = _0x1fa7;
             }
 
             console.log("=decode="+JSON.stringify(_0x361f39))
+            
             return _0x361f39;
           }, _0x329fdd[_0x1acfb0(0xa35)] = function (_0x2e59f4) {
             var _0x112f69 = _0x1acfb0;
@@ -59248,13 +59250,13 @@ var _0x39a7e1 = _0x1fa7;
               var _0x48f0e9;
               var _0x30421c;
 
-              let keys = Object.keys(_0x385c4b.serverProto.AckType)
-              for (const key of keys) {
-                if(_0x385c4b.serverProto.AckType[key]==_0xfef3cd){
-                  console.log(`=OnRecvAck==AckType=${key}`);
-                  break;
-                }
-              }
+              // let keys = Object.keys(_0x385c4b.serverProto.AckType)
+              // for (const key of keys) {
+              //   if(_0x385c4b.serverProto.AckType[key]==_0xfef3cd){
+              //     console.log(`=OnRecvAck==AckType=${key}`);
+              //     break;
+              //   }
+              // }
               return _0x3fe1f9().wrap(function (_0xf57a6) {
                 for (;;) {
                   switch (_0xf57a6.prev = _0xf57a6.next) {
