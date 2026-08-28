@@ -9624,6 +9624,7 @@ var _0x39a7e1 = _0x1fa7;
             return void 0x0 === _0x4c98fb && (_0x4c98fb = _0x56ff72(0x30f5)), _0x4c98fb + _0x56ff72(0x15fd);
           }, _0x2b7672;
         }(), _0x1dabb1), _0x384e20[_0x3a085d(0x73a)] = _0x2dc704, _0x385c4b = _0x384e20[_0x3a085d(0x73a)];
+	window.gProto=_0x385c4b;
       }, function () {
         return {
           'protobufjs/minimal': _0x6b134b
@@ -59310,8 +59311,9 @@ var _0x39a7e1 = _0x1fa7;
                       }
                       return _0xf57a6.abrupt("break", 0x57);
                     case 0xd:
+                      // console.log("GameInfoAck.decode=_0x26e9e8="+_0x2177ea);
                       _0x26e9e8 = _0x385c4b.serverProto.GameInfoAck.decode(_0x2177ea);
-                      console.log("GameInfoAck.decode=="+JSON.stringify(_0x26e9e8))
+                      // console.log("GameInfoAck.decode=="+JSON.stringify(_0x26e9e8))
                       _0x114daa("info", _0x26e9e8);
                       this.m_jpUnlockBet = _0x26e9e8.jpUnlockBet;
                       this.m_mallInfo = _0x26e9e8.mall;
