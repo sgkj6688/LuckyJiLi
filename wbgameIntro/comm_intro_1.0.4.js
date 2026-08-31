@@ -1,3 +1,28 @@
+// 修复低版本安卓 WebView 不支持 replaceAll 的问题
+if (!String.prototype.replaceAll) {
+    String.prototype.replaceAll = function (search, replacement) {
+        // 如果输入的是字符串，需要转义特殊字符并转为全局正则
+        if (typeof search === "string") {
+            return this.replace(new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), replacement);
+        }
+        // 如果本身就是正则，确保带有 /g
+        return this.replace(search, replacement);
+    };
+}
+
+// //// 1. 动态创建 script 标签
+// const script = document.createElement("script");
+// // 2. 设置 vConsole 的 CDN 地址
+// script.src = "https://unpkg.com/vconsole@latest/dist/vconsole.min.js";
+// // 3. 监听脚本加载完成事件，完成后再进行初始化
+// script.onload = function () {
+//     // 脚本加载完后，window 上才会有 VConsole 对象
+//     window.vConsole = new window.VConsole();
+//     console.log("vConsole 初始化成功！");
+// };
+// // 4. 将 script 标签插入到页面中，触发下载
+// document.head.appendChild(script);
+
 (() => {
     const _0x4d33b0 = new URL(window.location.href);
     const _0x2111ce = _0x4d33b0.searchParams.get("xfrontpage");
