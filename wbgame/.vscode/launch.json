@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
 
-            "url": "http://localhost:3033/mc/?ssoKey=2085292352822521856&lang=en-US&gameId=199&domain_platform=0008:311.31.1.3&domain_gs=0008:311.31.1.3&be=0008:311.31.1.3&tadaSkin=1&isWebp=1&isVconsole=1",
+            "url": "http://localhost:3033/mc/?ssoKey=2085292352822521856&lang=en-US&gameId=199&domain_platform=0008:311.31.1.3&domain_gs=semagilij&be=0008:311.31.1.3&tadaSkin=1&isWebp=1&isVconsole=1",
 
             "webRoot": "${workspaceFolder}"
         }
