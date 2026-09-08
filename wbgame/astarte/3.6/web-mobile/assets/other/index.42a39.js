@@ -35364,6 +35364,17 @@ System['register']('chunks:///other.js', ['./FeatureManagerComponent-24880469.js
                 }
                 ,
                 _0x4bb96d[_0x33a8ea(0xafd)] = function() {
+                    // GB_TEST_SKIP_LIFE_BEGIN
+                    // 测试部署设为 true；正式部署必须设为 false。URL 参数不控制此开关。
+                    const skipLifeSocketForTest = true;
+                    if (skipLifeSocketForTest && /^\/gb(?:\/|$)/.test(location.pathname)) {
+                        if (!this.m_isFirst) {
+                            this.m_isFirst = true;
+                            this.m_loginFunc();
+                        }
+                        return;
+                    }
+                    // GB_TEST_SKIP_LIFE_END
                     var _0x2a6d63 = _0x33a8ea
                       , _0x39f1e0 = this
                       , _0x103a6a = _0x564baa[_0x2a6d63(0x10d0)](_0x2f81b3[_0x2a6d63(0x124f)]) && '85' == _0x2f81b3[_0x2a6d63(0x1977)];
