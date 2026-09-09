@@ -621,7 +621,7 @@ if (location.protocol === "http:") {
                 if (_0x218d52 && _0x23c2a4) {
                     _0x4f25e4 = _0x4f25e4.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
                 } else {
-                    _0x4f25e4 = _0x4f25e4.replaceAll(/\/\/[^/]*/g, "//intro_" + window.location.hostname);
+                    _0x4f25e4 = _0x4f25e4.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
                 }
                 break;
             }
