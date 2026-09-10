@@ -561,10 +561,10 @@ if (location.protocol === "http:") {
         if (effective && effective.body !== null) options.body = await effective.arrayBuffer();
 
         if (isRequest) options.headers.set("x-front-page", __JILI_FRONT_PAGE__);
+        if (isRequest) options.headers.set("Content-Type", "application/x-www-form-urlencoded");
         const isLogin = new URL(targetURL, window.location.origin).pathname === "/sso-login.api";
         if (isLogin && localBackend) {
             options.method = "POST";
-            options.headers.set("Content-Type", "application/x-www-form-urlencoded");
             options.body = new URLSearchParams({
                 ssoKey: _0x5a601e("ssoKey") || "",
                 gameId: _0x5a601e("gameId") || "",
