@@ -3455,28 +3455,40 @@ var _0x19ba03 = _0xa1a9;
                                                                         (_0x343b64--, (_0x352d10[_0x4bc222(0x3aa)] = 0x9));
                                                                         break;
                                                                     case 0x10:
-                                                                        if (this.m_info.Plus) {
-                                                                            _0x429bfd.string = this.m_info.AddRound.toString();
-                                                                            this.m_goldFlyCount.string = this.m_info.AddRound.toString();
-                                                                            _0x44f333.string = _0x513974.ComboSetting.Round[_0x703fb2].toString();
-                                                                            this.m_whiteFlyCount.string = _0x513974.ComboSetting.Round[_0x703fb2].toString();
-                                                                        } else {
-                                                                            console.log(
-                                                                                `==${_0xa1a9}====${JSON.stringify(_0x513974.ComboSetting)}=${JSON.stringify(_0x513974.ComboSetting.PlusRound)}=`,
-                                                                            );
-                                                                            console.log(`==${"PlusRound"}==${_0x703fb2}==${"toString"}==`);
-                                                                            _0x429bfd.string = _0x513974.ComboSetting.PlusRound[0].toString();
-                                                                            this.m_goldFlyCount.string = _0x513974.ComboSetting.PlusRound[0].toString();
-                                                                            _0x44f333.string = this.m_info.AddRound.toString();
-                                                                            this.m_whiteFlyCount.string = this.m_info.AddRound.toString();
-                                                                        }
-                                                                        _0x2d6624.Play(_0x513974.AudioClips.Bigjack_replace);
-                                                                        this.m_backgrond.ShowResult();
-                                                                        _0x32ffba.node.active = true;
-                                                                        _0x32ffba.ShowFlop(this.m_chooseIdx === 0x0);
-                                                                        _0x2c22e5.node.active = true;
-                                                                        _0x352d10.next = 0x18;
-                                                                        return _0x2c22e5.ShowFlop(this.m_chooseIdx === 0x1);
+                                                                        return (
+                                                                            this[_0x4bc222(0x716)][_0x4bc222(0x57b)]
+                                                                                ? ((_0x429bfd[_0x4bc222(0x38e)] =
+                                                                                      this["m_info"]["AddRound"][_0x4bc222(0x3fd)]()),
+                                                                                  (this["m_goldFlyCount"][_0x4bc222(0x38e)] =
+                                                                                      this[_0x4bc222(0x716)][_0x4bc222(0x715)][_0x4bc222(0x3fd)]()),
+                                                                                  (_0x44f333[_0x4bc222(0x38e)] =
+                                                                                      _0x513974[_0x4bc222(0x65b)][_0x4bc222(0x658)][_0x703fb2][
+                                                                                          _0x4bc222(0x3fd)
+                                                                                      ]()),
+                                                                                  (this[_0x4bc222(0x370)]["string"] =
+                                                                                      _0x513974[_0x4bc222(0x65b)][_0x4bc222(0x658)][_0x703fb2][
+                                                                                          _0x4bc222(0x3fd)
+                                                                                      ]()))
+                                                                                : ((_0x429bfd[_0x4bc222(0x38e)] =
+                                                                                      _0x513974["ComboSetting"][_0x4bc222(0x205)][_0x703fb2][
+                                                                                          _0x4bc222(0x3fd)
+                                                                                      ]()),
+                                                                                  (this["m_goldFlyCount"][_0x4bc222(0x38e)] =
+                                                                                      _0x513974[_0x4bc222(0x65b)][_0x4bc222(0x205)][_0x703fb2][
+                                                                                          _0x4bc222(0x3fd)
+                                                                                      ]()),
+                                                                                  (_0x44f333[_0x4bc222(0x38e)] =
+                                                                                      this[_0x4bc222(0x716)][_0x4bc222(0x715)][_0x4bc222(0x3fd)]()),
+                                                                                  (this[_0x4bc222(0x370)][_0x4bc222(0x38e)] =
+                                                                                      this[_0x4bc222(0x716)][_0x4bc222(0x715)][_0x4bc222(0x3fd)]())),
+                                                                            _0x2d6624[_0x4bc222(0x493)](_0x513974[_0x4bc222(0x70d)][_0x4bc222(0x750)]),
+                                                                            this[_0x4bc222(0x6bd)][_0x4bc222(0x707)](),
+                                                                            (_0x32ffba[_0x4bc222(0x822)][_0x4bc222(0x82a)] = !0x0),
+                                                                            _0x32ffba["ShowFlop"](this[_0x4bc222(0x77a)] === _0x414bda),
+                                                                            (_0x2c22e5[_0x4bc222(0x822)][_0x4bc222(0x82a)] = !0x0),
+                                                                            (_0x352d10[_0x4bc222(0x3aa)] = 0x18),
+                                                                            _0x2c22e5["ShowFlop"](this["m_chooseIdx"] === _0x459ae3)
+                                                                        );
                                                                     case 0x18:
                                                                     case _0x4bc222(0x407):
                                                                         return _0x352d10[_0x4bc222(0x438)]();
