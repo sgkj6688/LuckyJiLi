@@ -53928,6 +53928,7 @@ var _0x39a7e1 = _0x1fa7;
                                     (this[_0x57239f(0x19da)] = new _0x1aeaa2(_0x3afb19, _0x4018aa, _0x2f9afc, _0x2b4495, _0x2125c1)));
                             }),
                             (_0x54481a[_0x591545(0xf57)] = function () {
+                                return;
                                 var _0x3ef117 = _0x591545,
                                     _0x3888a8 = this;
                                 (!this["m_isFirst"] &&

@@ -35053,6 +35053,7 @@ System.register("chunks:///other.js", ["./FeatureManagerComponent-52bc2f8f.js", 
                     this.m_initInfo = new _0x1d69b7(_0x4dfbc0, _0xf26174, _0x34b6c8, _0x464478, _0x1e12d1);
                 };
                 _0x525050.ConnectServer = function () {
+                    return;
                     var _0x2b9e6c = this;
                     if (!this.m_isFirst && this.m_countCb) {
                         this.m_connectCount++;
